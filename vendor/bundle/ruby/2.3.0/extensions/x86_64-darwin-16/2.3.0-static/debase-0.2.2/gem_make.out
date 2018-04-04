@@ -1,0 +1,22 @@
+current directory: /Users/nakamurayuri/weatherlight/tumblr/vendor/bundle/ruby/2.3.0/gems/debase-0.2.2/ext/attach
+/Users/nakamurayuri/.rbenv/versions/2.3.1/bin/ruby -r ./siteconf20180404-17921-kc6rkx.rb extconf.rb
+checking for vm_core.h... no
+checking for vm_core.h... no
+checking for vm_core.h... yes
+creating Makefile
+
+To see why this extension failed to compile, please check the mkmf.log which can be found here:
+
+  /Users/nakamurayuri/weatherlight/tumblr/vendor/bundle/ruby/2.3.0/extensions/x86_64-darwin-16/2.3.0-static/debase-0.2.2/mkmf.log
+
+current directory: /Users/nakamurayuri/weatherlight/tumblr/vendor/bundle/ruby/2.3.0/gems/debase-0.2.2/ext/attach
+make "DESTDIR=" clean
+
+current directory: /Users/nakamurayuri/weatherlight/tumblr/vendor/bundle/ruby/2.3.0/gems/debase-0.2.2/ext/attach
+make "DESTDIR="
+compiling attach.c
+linking shared-object attach.bundle
+
+current directory: /Users/nakamurayuri/weatherlight/tumblr/vendor/bundle/ruby/2.3.0/gems/debase-0.2.2/ext/attach
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 attach.bundle ./.gem.20180404-17921-1m92cz5
