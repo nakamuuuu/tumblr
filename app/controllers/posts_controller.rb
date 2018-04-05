@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_action :set_post, only: [:show, :edit, :update, :destroy]
+  before_action :set_post, only: %i[show edit update destroy]
 
   def index
     @posts = Post.all.order('created_at DESC')
@@ -18,11 +18,9 @@ class PostsController < ApplicationController
     end
   end
 
-  def show
-  end
+  def show; end
 
-  def edit
-  end
+  def edit; end
 
   def update
     if @post.update(params[:post].permit(:title, :body))
@@ -39,6 +37,7 @@ class PostsController < ApplicationController
   end
 
   private
+
   def post_params
     params.require(:post).permit(:title, :body)
   end
